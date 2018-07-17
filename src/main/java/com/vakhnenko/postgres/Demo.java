@@ -11,9 +11,9 @@ import java.sql.*;
 public class Demo extends HttpServlet {
 
     static final String JDBC_DRIVER = "org.postgresql.Driver";
-    static final String DATABASE_URL = "jdbc:postgresql://localhost:5432/servlets_tutorial";
-    static final String DATABASE_USER = "postgres";
-    static final String DATABASE_PASSWORD = "postgres";
+    static final String DATABASE_URL = "jdbc:postgresql://localhost:5432/servlets";
+    static final String DATABASE_USER = "root";
+    static final String DATABASE_PASSWORD = "oJ0K58fE29kZhgXcQQV7";
     static final String GET_ALL_DEVELOPERS_RECORDS = "SELECT * FROM developers";
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

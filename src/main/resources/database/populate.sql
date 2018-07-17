@@ -1,0 +1,1 @@
+INSERT INTO developers VALUES (1, 'Ivan', 'Ivanov', 'Java Dev', 3, '1000.00');

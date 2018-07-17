@@ -26,9 +26,7 @@ public class Demo extends HttpServlet {
         try {
             Class.forName(JDBC_DRIVER);
             Connection connection = DriverManager.getConnection(DATABASE_URL, DATABASE_USER, DATABASE_PASSWORD);
-
             Statement statement = connection.createStatement();
-
             ResultSet resultSet = statement.executeQuery(GET_ALL_DEVELOPERS_RECORDS);
 
             writer.println(docType + "<html><head><title>" + title + "</title></head><body>");
@@ -41,7 +39,6 @@ public class Demo extends HttpServlet {
                 String specialty = resultSet.getString(4);
                 int experience = resultSet.getInt(5);
                 int salary = resultSet.getInt(6);
-
 
                 writer.println("ID: " + id);
                 writer.println("First name: " + firstName + "<br/>");
